@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after {
+    content: '';
+    content: none;
+}
+
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1 {
+   width: 450px;
+   margin: auto;
+   margin-top: 10px;
+   font-size: 1.6rem;
+   color: #607D8B;
+   font-weight: 700;
+}
+
+h2 {
+   margin-top: 10px;
+   font-size: 1.3rem;
+   padding-bottom: 5px;
+   border-bottom: 1px solid lightgrey;
+}
+
+strong {
+   font-weight: 700;
+}
+
+article p {
+   margin: 5px 0;
+   line-height: 130%;
+}
+
+.bonusFlex {
+   display: flex;
+   flex-flow: row nowrap;
+}
+
+.bonusFlex p {
+   width: 425px;
+}
+
+#musicImg {
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   background-image: url("img/musicOn.png");
+   background-position:center center;
+   background-size: cover;
+}
+
+.off {
+   background-image: url("img/musicOff.png") !important;
+}
+
+#bonus1HowTo, #bonus2HowTo, #bonus3HowTo{
+   width: 15px;
+   height: 15px;
+   border-radius: 7px;
+   margin: 7px 0;
+   margin-right: 10px;
+}
+
+#bonus1HowTo {
+   background-color: lightgrey;
+}
+#bonus2HowTo {
+   background-color: #607D8B;
+}
+#bonus3HowTo {
+   background-color: black;
+}
+
+#howToButton {
+   width: 450px;
+   margin: auto;
+   margin-top: 500px;
+   font-size: 1.2rem;
+   padding: 10px;
+   color: white;
+   background-color: #607D8B;
+   cursor: pointer;
+}
+
+#howToContent {
+   width: 450px;
+   margin: auto;
+   font-size: 0.9rem;
+}
+
+.hide {
+   display: none;
+}
+
+.terrain {
+    margin:auto;
+    width: 450px;
+    position: absolute;
+    clear: both;
+    margin-top: 20px;
+}
+
+#container {
+   width: 450px;
+   margin: auto;
+}
+
+#playerPlaying {
+   font-size: 1.5rem;
+}
+
+.terrain .case {
+    width: 30px;
+    height: 30px;
+    border:1px solid lightgrey;
+    float: left;
+}
+
+.terrain .bonus1 {
+   width: 15px;
+   height: 15px;
+   margin: 7px;
+   display: block;
+   border-radius: 7px;
+   background-color: lightgrey;
+   background-image:none!important;
+background-position:center center;
+}
+.terrain .bonus2 {
+   width: 15px;
+   height: 15px;
+   margin: 7px;
+   display: block;
+   border-radius: 7px;
+   background-color: #607D8B;
+   background-image:none!important;
+background-position:center center;
+}
+.terrain .bonus3 {
+   width: 15px;
+   height: 15px;
+   margin: 7px;
+   display: block;
+   border-radius: 7px;
+   background-color: black;
+   background-image:none!important;
+background-position:center center;
+}
+
+.terrain .player1 {
+    background-position:center center!important;
+}
+
+.terrain .player1case {
+background-image:none!important;
+background-position:center center;
+}
+
+.terrain .player2 {
+   background-position:center center!important;
+}
+
+.terrain .player2case {
+background-image:none!important;
+background-position:center center;
+}
+
+.terrain .tentaSkill, .terrain .tentaSkillNul{
+background-color:#3E5E53;
+background-image:none!important;
+background-position:center center;
+}
+
+#playerChoice{
+   width: 100%;
+   background-color: #607D8B;
+   position: absolute;
+   padding: 10px;
+}
+
+#playerChoice section{
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+}
+
+#playerChoice section div {
+   width: 16.6666666%;
+   padding: 8px;
+   background-color: white;
+   border-right: 1px solid #607D8B;
+   cursor: pointer;
+}
+
+#playerChoice section div:last-of-type {
+   border-right: 0px;
+}
+
+#playerChoice section div img{
+   width: 100%;
+   display: block;
+   margin: auto;
+}
+
+#playerChoice h2 {
+   margin-top: 0;
+   color: white;
+}
+
+#playerChoice>p {
+   margin-top:15px;
+   margin-bottom: 10px;
+   color: white;
+}
+
+#playerChoice section div p{
+   font-size: 0.75rem;
+   text-align: center;
+   margin-bottom: 5px;
+   color: #607D8B;
+}
+
+#playerChoice input {
+   margin-top: 30px;
+   width: 100%;
+   display: block;
+   padding: 10px;
+   text-align: center;
+   background-color: white;
+   color: #607D8B;
+   outline: none;
+   cursor: pointer;
+   height: 114px;
+}
+
+.playerTurn {
+   position: absolute;
+   left: 10px;
+   top: 10px;
+   text-transform: uppercase;
+   font-size: 1.3rem;
+}

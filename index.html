@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Test</title>
+   <script src="build/react.js"></script>
+   <script src="build/react-dom.js"></script>
+   <script src="build/browser.min.js"></script>
+   <script src="build/jquery.min.js"></script>
+   <script src="other.js"></script>
+   <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+   <h1>Pokemon Arena BATTLE</h1>
+   <div id="musicImg"></div>
+   <!-- Sounds -->
+   <audio id="musicSound" loop autoplay src="sound/music.mp3"></audio>
+   <audio id="moveSound" src="sound/move.mp3"></audio>
+
+   <audio id="mewtwoSound" src="sound/mewtwo.mp3"></audio>
+   <audio id="machampSound" src="sound/machamp.mp3"></audio>
+   <audio id="alakazamSound" src="sound/alakazam.mp3"></audio>
+   <audio id="charizardSound" src="sound/charizard.mp3"></audio>
+   <audio id="victreebelSound" src="sound/victreebel.mp3"></audio>
+   <audio id="tentacruelSound" src="sound/tentacruel.mp3"></audio>
+   <!-- Sound End -->
+
+
+   <div id="container"></div>
+   <script type="text/babel" src="main.js"></script>
+   <p id="howToButton">How to play</p>
+   <article class="hide" id="howToContent">
+      <h2>The game</h2>
+      <p><strong>Pokemon Epic BATTLE</strong> is a 2 players in turns game.</p>
+      <p>Each squares that a player move on belongs to this one. Then, the other player can't move on this square.</p>
+      <p>Bonuses appears randomly on the map and can be used to take several square in one turn.</p>
+      <p><strong>The winner is the one who have most square when all the map is covered.</strong></p>
+      <p>Each players can also trap the other to win.</p>
+
+      <h2>Controls</h2>
+      <p>Dracaufeu : <strong>ZQSD</strong> and <strong>F</strong> to use bonuses</p>
+      <p>Tortank : <strong>Arrow Keys</strong> and <strong>0</strong> to use bonuses</p>
+
+      <h2>About bonuses</h2>
+      <div class="bonusFlex">
+         <div id="bonus1HowTo"></div><p>Bonuses 1 : Each squares that a player move on belongs to this one. Then, the other player can't move on</p>
+      </div>
+      <div class="bonusFlex">
+         <div id="bonus2HowTo"></div><p>Bonuses 2 :</p>
+      </div>
+      <div class="bonusFlex">
+         <div id="bonus3HowTo"></div><p>Bonuses 3 :</p>
+      </div>
+   </article>
+</body>
+</html>
