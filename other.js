@@ -18,5 +18,13 @@ $(document).ready(function(){
       }
    });
 
+   var specialAttackWindow = $('.specialAttackWindow');
+   specialAttackWindow.children( ".modele" ).hide();
+   specialAttackWindow.hover(function() {
+      $( this ).children( ".modele" ).fadeIn( "fast" );
+   }, function() {
+      $( this ).children( ".modele" ).fadeOut( "fast" );
+   });
+
 
 });

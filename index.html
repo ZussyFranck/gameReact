@@ -16,6 +16,9 @@
    <!-- Sounds -->
    <audio id="musicSound" loop autoplay src="sound/music.mp3"></audio>
    <audio id="moveSound" src="sound/move.mp3"></audio>
+   <audio id="bonusesSound" src="sound/bonuses.wav"></audio>
+   <audio id="bonusesPopSound" src="sound/bonusesPop.wav"></audio>
+   <audio id="tackleSound" src="sound/tackle.wav"></audio>
 
    <audio id="mewtwoSound" src="sound/mewtwo.mp3"></audio>
    <audio id="machampSound" src="sound/machamp.mp3"></audio>
@@ -26,31 +29,102 @@
    <!-- Sound End -->
 
 
-   <div id="container"></div>
-   <script type="text/babel" src="main.js"></script>
+   <div class="hide playerWindow tentacruelWindow">
+      <div><img src="img/tentacruel-selected.png"/></div>
+      <div class="basicAttackWindow">
+         <p>Basic attack</p>
+         <p class="counter"></p>
+      </div>
+      <div class="specialAttackWindow">
+         <p>Special attack</p>
+         <p class="counter"></p>
+         <img class="modele" src="img/tentacruel_modele.png"/>
+      </div>
+   </div>
+
+   <div class="hide playerWindow machampWindow">
+      <div><img src="img/machamp-selected.png"/></div>
+      <div class="basicAttackWindow">
+         <p>Basic attack</p>
+         <p class="counter"></p>
+      </div>
+      <div class="specialAttackWindow">
+         <p>Special attack</p>
+         <p class="counter"></p>
+         <img class="modele" src="img/machamp_modele.png"/>
+      </div>
+   </div>
+
+   <div class="hide playerWindow charizardWindow">
+      <div><img src="img/charizard-selected.png"/></div>
+      <div class="basicAttackWindow">
+         <p>Basic attack</p>
+         <p class="counter"></p>
+      </div>
+      <div class="specialAttackWindow">
+         <p>Special attack</p>
+         <p class="counter"></p>
+         <img class="modele" src="img/charizard_modele.png"/>
+      </div>
+   </div>
+
+   <div class="hide playerWindow mewtwoWindow">
+      <div><img src="img/mewtwo-selected.png"/></div>
+      <div class="basicAttackWindow">
+         <p>Basic attack</p>
+         <p class="counter"></p>
+      </div>
+      <div class="specialAttackWindow">
+         <p>Special attack</p>
+         <p class="counter"></p>
+         <img class="modele" src="img/mewtwo_modele.png"/>
+      </div>
+   </div>
+
+   <div class="hide playerWindow victreebelWindow">
+      <div><img src="img/victreebel-selected.png"/></div>
+      <div class="basicAttackWindow">
+         <p>Basic attack</p>
+         <p class="counter"></p>
+      </div>
+      <div class="specialAttackWindow">
+         <p>Special attack</p>
+         <p class="counter"></p>
+         <img class="modele" src="img/victreebel_modele.png"/>
+      </div>
+   </div>
+
+   <div class="hide playerWindow alakazamWindow">
+      <div><img src="img/alakazam-selected.png"/></div>
+      <div class="basicAttackWindow">
+         <p>Basic attack</p>
+         <p class="counter"></p>
+      </div>
+      <div class="specialAttackWindow">
+         <p>Special attack</p>
+         <p class="counter"></p>
+         <img class="modele" src="img/alakazam_modele.png"/>
+      </div>
+   </div>
    <p id="howToButton">How to play</p>
    <article class="hide" id="howToContent">
-      <h2>The game</h2>
       <p><strong>Pokemon Epic BATTLE</strong> is a 2 players in turns game.</p>
       <p>Each squares that a player move on belongs to this one. Then, the other player can't move on this square.</p>
-      <p>Bonuses appears randomly on the map and can be used to take several square in one turn.</p>
+      <p>Each pokemon can use 1 common basic attack and 2 unique special attack.</p>
+      <p>Attacks can't be use every time, you have to wait some turns before use them</p>
+      <p>Bonuses appears randomly on the map and can be use to reduce attack's cool down</p>
       <p><strong>The winner is the one who have most square when all the map is covered.</strong></p>
       <p>Each players can also trap the other to win.</p>
 
       <h2>Controls</h2>
-      <p>Dracaufeu : <strong>ZQSD</strong> and <strong>F</strong> to use bonuses</p>
-      <p>Tortank : <strong>Arrow Keys</strong> and <strong>0</strong> to use bonuses</p>
-
-      <h2>About bonuses</h2>
-      <div class="bonusFlex">
-         <div id="bonus1HowTo"></div><p>Bonuses 1 : Each squares that a player move on belongs to this one. Then, the other player can't move on</p>
-      </div>
-      <div class="bonusFlex">
-         <div id="bonus2HowTo"></div><p>Bonuses 2 :</p>
-      </div>
-      <div class="bonusFlex">
-         <div id="bonus3HowTo"></div><p>Bonuses 3 :</p>
-      </div>
+      <p>Player 1 : <strong>ZQSD</strong> and <strong>R</strong> to use special attack and <strong>E</strong> to use basic attack</p>
+      <p>Player 2 : <strong>Arrow Keys</strong> and <strong>2</strong> to use special attack and <strong>1</strong>to use basic attack</p>
    </article>
+   <div id="container"></div>
+   <script type="text/babel" src="main.js"></script>
+   <!-- <script type="text/babel" src="attack.js"></script> -->
+   <!-- <script type="text/babel" src="characterSelection.js"></script> -->
+
+
 </body>
 </html>

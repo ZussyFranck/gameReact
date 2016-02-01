@@ -1,49 +1,49 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -o-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   box-sizing: border-box;
+   font-family: "Open Sans", sans-serif;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
+   display: block;
 }
 
 body {
-    line-height: 1;
+   line-height: 1;
 }
 
 ol, ul {
-    list-style: none;
+   list-style: none;
 }
 
 blockquote, q {
-    quotes: none;
+   quotes: none;
 }
 
 blockquote:before, blockquote:after {
-    content: '';
-    content: none;
+   content: '';
+   content: none;
 }
 
 q:before, q:after {
-    content: '';
-    content: none;
+   content: '';
+   content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+   border-collapse: collapse;
+   border-spacing: 0;
 }
 
 h1 {
@@ -51,7 +51,7 @@ h1 {
    margin: auto;
    margin-top: 10px;
    font-size: 1.6rem;
-   color: #607D8B;
+   color: #C0392B;
    font-weight: 700;
 }
 
@@ -117,12 +117,18 @@ article p {
 #howToButton {
    width: 450px;
    margin: auto;
-   margin-top: 500px;
+   margin-top: 10px;
    font-size: 1.2rem;
    padding: 10px;
    color: white;
-   background-color: #607D8B;
+   background-color: #c0392b;
    cursor: pointer;
+}
+
+.modele {
+   width: 100% !important;
+   border: 1px solid grey;
+   margin-top: 10px !important;
 }
 
 #howToContent {
@@ -132,15 +138,15 @@ article p {
 }
 
 .hide {
-   display: none;
+   display: none!important;
 }
 
 .terrain {
-    margin:auto;
-    width: 450px;
-    position: absolute;
-    clear: both;
-    margin-top: 20px;
+   margin:auto;
+   width: 450px;
+   position: absolute;
+   clear: both;
+   margin-top: 20px;
 }
 
 #container {
@@ -153,10 +159,10 @@ article p {
 }
 
 .terrain .case {
-    width: 30px;
-    height: 30px;
-    border:1px solid lightgrey;
-    float: left;
+   width: 30px;
+   height: 30px;
+   border:1px solid lightgrey;
+   float: left;
 }
 
 .terrain .bonus1 {
@@ -165,9 +171,9 @@ article p {
    margin: 7px;
    display: block;
    border-radius: 7px;
-   background-color: lightgrey;
+   background-color: red;
    background-image:none!important;
-background-position:center center;
+   background-position:center center;
 }
 .terrain .bonus2 {
    width: 15px;
@@ -177,7 +183,7 @@ background-position:center center;
    border-radius: 7px;
    background-color: #607D8B;
    background-image:none!important;
-background-position:center center;
+   background-position:center center;
 }
 .terrain .bonus3 {
    width: 15px;
@@ -187,16 +193,16 @@ background-position:center center;
    border-radius: 7px;
    background-color: black;
    background-image:none!important;
-background-position:center center;
+   background-position:center center;
 }
 
 .terrain .player1 {
-    background-position:center center!important;
+   background-position:center center!important;
 }
 
 .terrain .player1case {
-background-image:none!important;
-background-position:center center;
+   background-image:none!important;
+   background-position:center center;
 }
 
 .terrain .player2 {
@@ -204,14 +210,44 @@ background-position:center center;
 }
 
 .terrain .player2case {
-background-image:none!important;
-background-position:center center;
+   background-image:none!important;
+   background-position:center center;
 }
 
 .terrain .tentaSkill, .terrain .tentaSkillNul{
-background-color:#3E5E53;
-background-image:none!important;
-background-position:center center;
+   background-color:#3E5E53;
+   background-image:none!important;
+   background-position:center center;
+}
+
+.player1win ,.player2win{
+   width: 100%;
+   background-color: #607D8B;
+   position: absolute;
+   padding: 10px;
+   z-index: 10000;
+   height: 100%;
+   opacity: 0.4;
+}
+
+.player1win img ,.player2win img{
+   width: 75%;
+   margin: auto;
+   display: block;
+}
+
+.player1win h2 ,.player2win h2{
+   font-size: 2rem;
+   color: white;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+.player1win p ,.player2win p{
+   font-size: 1.1rem;
+   color: white;
+   margin-bottom: 15px;
+   text-align: center;
 }
 
 #playerChoice{
@@ -282,4 +318,52 @@ background-position:center center;
    top: 10px;
    text-transform: uppercase;
    font-size: 1.3rem;
+}
+
+.playerWindow {
+   position: absolute;
+   left: 10px;
+   top: 10px;
+   width: 250px;
+   height: 150px;
+   display: flex;
+   flex-flow: row wrap;
+}
+.playerWindow>div{
+   width: 100%;
+}
+
+.playerWindow>div:nth-child(1){
+   background-color: lightgrey;
+}
+
+.playerWindow>div img{
+   width: 50%;
+   display: block;
+   margin: auto;
+}
+
+.playerWindow .basicAttackWindow{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.playerWindow .basicAttackWindow p:nth-child(1), .playerWindow .specialAttackWindow p:nth-child(1){
+   padding: 5px;
+   text-align: center;
+   color: white;
+   background-color: grey;
+}
+
+.playerWindow span {
+   display: block;
+   font-size: 2.2rem;
+   text-align: center;
+}
+
+.playerWindow .counter{
+   text-align: center;
+   padding: 5px;
+   background-color: #27ae60;
+   color: white;
 }
